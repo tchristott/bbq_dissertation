@@ -1,0 +1,11 @@
+{
+    "Dose response":{
+        "image":"dose_response.png"
+        "equation":"ybot + (ytop - ybot)/(1 + (i/x)**h)",
+        "independent":"x"
+        "parameters":[
+            "ybot", "ytop", "i", "h"
+        ]
+    }
+
+}

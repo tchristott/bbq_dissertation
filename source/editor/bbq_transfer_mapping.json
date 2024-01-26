@@ -1,0 +1,100 @@
+{
+    "0": {
+          "Name":"Source Plate Name",
+          "Mapped":NaN,
+          "Group":0,
+          "Required":true,
+          "Comment":"Source Plate Name OR Barcode is required"
+    },
+    "1": {
+          "Name":"Source Plate Barcode",
+          "Mapped":NaN,
+          "Group":0,
+          "Required":true,
+          "Comment":"Source Plate Name OR Barcode is required"
+    },
+    "2": {
+          "Name":"Source Concentration",
+          "Mapped":NaN,
+          "Group":1,
+          "Required":true,
+          "Comment":"Source Concentration is required"
+    },
+    "3": {
+          "Name":"Source Concentration Unit",
+          "Mapped":NaN,
+          "Group":2,
+          "Required":true,
+          "Comment":"Source Concentration Unit is required"
+    },
+    "4": {
+          "Name":"Destination Plate Name",
+          "Mapped":NaN,
+          "Group":3,
+          "Required":true,
+          "Comment":"Destination Plate Name OR Barcode is required"
+    },
+    "5": {
+          "Name":"Destination Plate Barcode",
+          "Mapped":NaN,
+          "Group":3,
+          "Required":true,
+          "Comment":"Destination Plate Name OR Barcode is required"
+    },
+    "6": {
+          "Name":"Destination Plate Type",
+          "Mapped":NaN,
+          "Group":4,
+          "Required":false,
+          "Comment":"Destination Plate Type is optional"
+    },
+    "7": {
+          "Name":"Sample ID",
+          "Mapped":NaN,
+          "Group":5,
+          "Required":true,
+          "Comment":"Sample ID OR Name is required"
+    },
+    "8": {
+          "Name":"Sample Name",
+          "Mapped":NaN,
+          "Group":5,
+          "Required":true,
+          "Comment":"Sample ID OR Name is required"
+    },
+    "9": {
+          "Name":"Sample Transfer Volume",
+          "Mapped":NaN,
+          "Group":6,
+          "Required":false,
+          "Comment":"Sample Transfer Volume is optional, but recommended."
+    },
+    "10": {
+           "Name":"Destination Well",
+           "Mapped":NaN,
+           "Group":7,
+           "Required":true,
+           "Comment":"Destination Well is required"
+    },
+    "11": {
+           "Name":"Destination Concentration",
+           "Mapped":NaN,
+           "Group":8,
+           "Required":true,
+           "Comment":"Destination Concentration is required"
+    },
+    "12": {
+           "Name":"Destination Concentr. Unit",
+           "Mapped":NaN,
+           "Group":9,
+           "Required":true,
+           "Comment":"Destination Concentration Unit is required"
+    },
+    "13": {
+           "Name":"Solvent Transfer Volume",
+           "Mapped":NaN,
+           "Group":10,
+           "Required":false,
+           "Comment":"Solvent Transfer Volume is optional, but recommended. If this is not defined, transfers without a sample identifier will be counted as solvent transfers."
+    }
+}

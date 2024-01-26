@@ -1,0 +1,7 @@
+Code,Caption,Message
+generic,Error,Some error occurred with the Oracle database connection.\nPlease contact BBQ support.
+client_not_found,Oracle Instant Client,Could not find Oracle Instant Client.\n Please verify BBQ is installed properly.\nContact BBQ support if installing the latest version does not solve the problem.
+client_not_initialised,Oracle Instant Client,Could not initialise Oracle Instant Client.\n Please contact BBQ support.
+ORA-12170,Connection timeout,Connection has timed out. Please check your connection. \nYou may need to use a VPN connection if you are working remotely.
+ORA-01017,Invalid credentials,Invalid username and/or password. Logon denied.
+ORA-28000,Account locked,Your account is locked.\nPlease contact the database administrator.

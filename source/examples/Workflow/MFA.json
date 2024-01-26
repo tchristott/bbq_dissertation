@@ -1,0 +1,214 @@
+{
+    "Meta": {
+        "Shorthand": "MFMFA",
+        "FullName": "My First Assay",
+        "DisplayTitle": null,
+        "Timestamp": "01/01/1970",
+        "Author": "thoma",
+        "AssayNameDB": "MFA-IC50",
+        "MainCategory": "Plate Based",
+        "SecondaryCategory": "Protein Protein Interaction",
+        "OtherCategories": null
+    },
+    "DefaultDetails": {
+        "PlateLayout": "Dynamic",
+        "AssayVolume": "",
+        "AssayVolumeUnit": "ul",
+        "DateOfAnalysis": "",
+        "Control": "20 mM HEPES, 100 mM NaCl, 2 mM TCEP, 0.5%(w/v) CHAPS, pH 7.5"
+    },
+    "Reagents": {
+        "Protein": {
+            "Optional": false,
+            "Name": "MLLT3",
+            "Batch": "MLLT3A-p001",
+            "Conc": "0.2",
+            "Conc Unit": "uM"
+        },
+        "Peptide": {
+            "Optional": false,
+            "Name": "H3K9cro",
+            "Batch": "EP000001",
+            "Conc": "20",
+            "Conc Unit": "nM"
+        }
+    },
+    "Tabs": {
+        "Details": {
+            "Column1": {},
+            "Column2": {},
+            "Column3": {},
+            "Column4": {}
+        }
+    },
+    "RawDataRules": {},
+    "TransferRules": {
+        "DateTime": "2024-01-19 23:45:11.518718",
+        "Extension": null,
+        "FileType": null,
+        "Engine": null,
+        "Worksheet": null,
+        "DestinationPlateFormat": 384,
+        "UseVerificationKeyword": null,
+        "VerificationKeyword": null,
+        "VerificationKeywordAxis": null,
+        "VerificationKeywordRow": null,
+        "VerificationKeywordColumn": null,
+        "VerificationKeywordExact": null,
+        "UseStartKeyword": null,
+        "StartKeywordExactStartKeyword": null,
+        "StartKeywordAxis": null,
+        "StartKeywordRow": null,
+        "StartKeywordColumn": null,
+        "UseStartCoordinates": null,
+        "StartCoordinates": null,
+        "UseStopKeyword": null,
+        "StopKeyword": null,
+        "StopKeywordExact": null,
+        "StopKeywordColumn": null,
+        "UseStopCoordinates": null,
+        "StopCoordinates": null,
+        "UseStopEmptyLine": null,
+        "CatchSolventOnlyTransfers": null,
+        "TransferFileColumns": {
+            "0": {
+                "Name": "Source Plate Name",
+                "Mapped": NaN,
+                "Group": 0,
+                "Required": true,
+                "Comment": "Source Plate Name OR Barcode is required"
+            },
+            "1": {
+                "Name": "Source Plate Barcode",
+                "Mapped": NaN,
+                "Group": 0,
+                "Required": true,
+                "Comment": "Source Plate Name OR Barcode is required"
+            },
+            "2": {
+                "Name": "Source Concentration",
+                "Mapped": NaN,
+                "Group": 1,
+                "Required": true,
+                "Comment": "Source Concentration is required"
+            },
+            "3": {
+                "Name": "Source Concentration Unit",
+                "Mapped": NaN,
+                "Group": 2,
+                "Required": true,
+                "Comment": "Source Concentration Unit is required"
+            },
+            "4": {
+                "Name": "Destination Plate Name",
+                "Mapped": NaN,
+                "Group": 3,
+                "Required": true,
+                "Comment": "Destination Plate Name OR Barcode is required"
+            },
+            "5": {
+                "Name": "Destination Plate Barcode",
+                "Mapped": NaN,
+                "Group": 3,
+                "Required": true,
+                "Comment": "Destination Plate Name OR Barcode is required"
+            },
+            "6": {
+                "Name": "Destination Plate Type",
+                "Mapped": NaN,
+                "Group": 4,
+                "Required": false,
+                "Comment": "Destination Plate Type is optional"
+            },
+            "7": {
+                "Name": "Sample ID",
+                "Mapped": NaN,
+                "Group": 5,
+                "Required": true,
+                "Comment": "Sample ID OR Name is required"
+            },
+            "8": {
+                "Name": "Sample Name",
+                "Mapped": NaN,
+                "Group": 5,
+                "Required": true,
+                "Comment": "Sample ID OR Name is required"
+            },
+            "9": {
+                "Name": "Sample Transfer Volume",
+                "Mapped": NaN,
+                "Group": 6,
+                "Required": false,
+                "Comment": "Sample Transfer Volume is optional, but recommended."
+            },
+            "10": {
+                "Name": "Destination Well",
+                "Mapped": NaN,
+                "Group": 7,
+                "Required": true,
+                "Comment": "Destination Well is required"
+            },
+            "11": {
+                "Name": "Destination Concentration",
+                "Mapped": NaN,
+                "Group": 8,
+                "Required": true,
+                "Comment": "Destination Concentration is required"
+            },
+            "12": {
+                "Name": "Destination Concentr. Unit",
+                "Mapped": NaN,
+                "Group": 9,
+                "Required": true,
+                "Comment": "Destination Concentration Unit is required"
+            },
+            "13": {
+                "Name": "Solvent Transfer Volume",
+                "Mapped": NaN,
+                "Group": 10,
+                "Required": false,
+                "Comment": "Solvent Transfer Volume is optional, but recommended. If this is not defined, transfers without a sample identifier will be counted as solvent transfers."
+            }
+        },
+        "CatchExceptions": null,
+        "UseExceptionsKeyword": null,
+        "ExceptionsKeyword": null,
+        "ExceptionsKeywordExact": null,
+        "ExceptionsKeywordAxis": null,
+        "ExceptionsKeywordColumn": null,
+        "ExceptionsKeywordRow": null,
+        "UseExceptionsCoordinates": null,
+        "ExceptionsCoordinates": null
+    },
+    "DataProcessing": {
+        "SubtractBackground": true,
+        "UseAsBackground": "Control",
+        "BackgroundBackup": true,
+        "ControlName": "Control",
+        "NormaliseData": "True",
+        "NormalisedValue": "Ratio",
+        "MaxDatapoints": 16,
+        "ReplicatesSamePlate": true,
+        "ReplicatesAcrossPlates": false,
+        "ReplicateErrorCalculation": true,
+        "ReplicateErrorType": "StandardDeviation",
+        "DataFit": true,
+        "DataFitModel": {
+            "Name": "Custom",
+            "Equation": "ybot + (ytop - ybot)/(1 + (i/x)**h)",
+            "Parameters": [
+                "ybot",
+                "ytop",
+                "i",
+                "h"
+            ]
+        }
+    },
+    "Results": {},
+    "ResultsTable": {},
+    "Database": {
+        "UseDB": true,
+        "DBTables": {}
+    },
+    "SampleIDSource": "TransferFile"
+}
